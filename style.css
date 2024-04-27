@@ -109,6 +109,11 @@ li{
     min-height: 100vh;
 }
 
+.column-container {
+    columns: 2 200px; 
+    column-gap: 20px; 
+}
+
 .contacts {
     min-height: 100vh;
     margin: auto;
@@ -128,6 +133,14 @@ li{
     text-align: center;
 }
 
+.grid-container {
+    display: grid;
+    grid-template-columns: 1fr 1fr; /* Creates two columns of equal width */
+}
+
+.grid-item {
+    padding: 10px;
+}
 
 form h1 {
     text-align: center;
@@ -171,7 +184,6 @@ button:hover {
 }
 
 footer {
-    min-height: 100vh;
     width: 75vw;
     background: linear-gradient(rgb(69, 19, 118) yellow;
     text-align: center;
@@ -250,5 +262,6 @@ footer {
         font-size: 14px;
     }
 }
+
 
 

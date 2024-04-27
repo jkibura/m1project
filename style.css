@@ -1,13 +1,15 @@
 html {
     scroll-behavior: smooth;
-    background-color: antiquewhite;
-    width: auto;
+    background-color: linear-gradient lightblue;
 }
 
 body {
     width: 75%;
+    background-color: bisque;
     color: goldenrod;
     text-align: center;
+    margin: auto;
+    padding: 0;
 }
 
 h1 {
@@ -29,7 +31,7 @@ h2 {
     background-position: center;
     position: sticky;
     top:0;
-    width: 100vw;
+    width: 75vw;
     height: 100vh;
     margin: 0;
     padding:0;
@@ -100,6 +102,7 @@ li{
 
 .projects {
     min-height: 100vh;
+    background-color: aqua;
 }
 
 .about {
@@ -113,69 +116,69 @@ li{
     text-align: center;
 }
 
-input, textarea, button{
-    font-family: Arial, Helvetica, sans-serif;
-    line-height: 1.6;
-    margin: 0;
-    padding: 0;
-    box-sizing: border-box;
-}
-.contact-form {
-    max-width: 600px;
-    margin: 50px auto;
-    padding: 20px;
-    background-color: #f8f8f8;
-    border: 1px solid #ddd;
-    box-shadow: 0 0 10px rgba(0,0,0,0.1)
-}
-
-.form-row {
+body {
+    font-family: Arial, sans-serif;
+    background: #f4f4f4;
     display: flex;
-    justify-content: space-between;
-    margin-bottom: 20px;
+    justify-content: center;
+    align-items: center;
+    height: 100vh;
+    margin: 0;
 }
 
-.form-group {
-    flex: 1;
-    margin-right: 10px;
+.contact-form-container {
+    background: white;
+    padding: 20px;
+    border-radius: 8px;
+    box-shadow: 0 4px 8px rgba(0,0,0,0.1);
+    width: 300px;
 }
 
-.form-group:last-child {
-    margin-right: 0;
+/* Styling form elements */
+form h1 {
+    text-align: center;
+    color: #333;
 }
 
 label {
+    margin-top: 10px;
     display: block;
-    margin-bottom: 5px;
 }
 
 input[type="text"],
 input[type="email"],
 textarea {
     width: 100%;
-    padding: 10px;
+    padding: 8px;
+    margin-top: 5px;
     border: 1px solid #ccc;
     border-radius: 4px;
+    box-sizing: border-box; /* Include padding and border in the element's width */
 }
 
 textarea {
-    height: 120px;
+    height: 100px;
+    resize: none; /* Disable resizing of textarea */
 }
 
 button {
-    padding:10px 20px;
-    background-color: #007bff;
+    width: 100%;
+    padding: 10px;
+    background-color: #5c67f2;
     color: white;
     border: none;
     border-radius: 4px;
     cursor: pointer;
+    margin-top: 10px;
 }
+
 button:hover {
-    background-color: #0056b3;
+    background-color: #4a54e1;
 }
 
 footer {
     min-height: 100vh;
+    width: 75vw;
     background: linear-gradient(rgb(69, 19, 118) yellow;
     text-align: center;
     position: relative;
@@ -197,3 +200,28 @@ button {
 .flex {
     display: flexbox;
 }
+
+/* Styling for the row containers */
+.row {
+    display: flex; /* Makes the row a flex container */
+    justify-content: space-around; /* Spaces out the boxes within each row */
+    margin-bottom: 20px; 
+
+
+.box {
+    float: left black; 
+    width: 30%; /* Sets the width of each box to 30% of the row width */
+    padding: 10px; /* Adds padding inside the boxes */
+    background-color: #f4f4f4; /* Sets a background color for visibility */
+    text-align: center; /* Centers text inside the box */
+    border: 1px solid #ccc; /* Adds a border around each box */
+}
+
+
+.row::after {
+    content: "";
+    display: table;
+    clear: both;
+}
+
+

@@ -25,34 +25,50 @@
     </header>
     
     <hr>
-    <h2 class="projects">Projects</h2>
+    <article class="projects">
+    <h2>Projects</h2>
+    <div class="row">
+        <div class="box"> <img src="img/rocketlaunch.png" alt="Rocket Project Icon" width="400" height="267"><p>This was a fun project where I was able to use my programming skills to build a website for a rocket company.</p></div>
+        
+    <div class="row">
+        <div class="box"> <img src="img/taco2.jpg" alt=" CSS project icon" width="400" height="267"> <p>I was very excited to work on this particular website as it was one about food. And not only food, but Taco!</p> 2A</div>
+    
 
-    <h2 class="about">About</h2>
+    <div class="row">
+        <div class="box"> <img src="img/img1.jpg" alt= "A personal website" width="400" height="267"> <P>This is my personal favourite. I got to build from scratch a short website that highlights what I do for fun!</P> 1A</div>
+        
 
-    <article class="column">
+    
+
     </article>
 
     <article>
-        <h2 class="contacts">Contacts</h2>
-        <div class="contact.form">
+    <h2>About</h2>
+
+    <div class="column">
+    </div>
+
+</article>
+
+    <article>
+        <div class="contacts">
+        <h2>Contacts</h2>
+
+        <div class="contact-form-container">
             <form action="submit-form.php" method="POST">
-                <div class="form-row"> <div class="form-group">
-                    <label for="name">Name:</label>
-                    <input type="text" id="name" required>
-                </div>
-                <div class="form-group"><label for="email">Email:</label>
-                <input type="email" id="email" name="email" required></div>
-
-                <div class="form.group">
-                    <label for="message" name="message">Message:</label> <textarea id="message" name="message" required></textarea>
-       
-                </div>
+                <h1>Contact Us</h1>
+                <label for="name">Name:</label>
+                <input type="text" id="name" name="name" placeholder="Your name" required>
+                
+                <label for="email">Email:</label>
+                <input type="email" id="email" name="email" placeholder="Your email" required>
+                
+                <label for="message">Message:</label>
+                <textarea id="message" name="message" placeholder="Your message" required></textarea>
+                
                 <button type="submit">Send Message</button>
-
-
             </form>
         </div>
-        <button>Back to top</button>
     </article>
 
     <footer>

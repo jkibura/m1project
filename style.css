@@ -23,7 +23,7 @@ h1 {
 
 h2 {
     position: sticky;
-    font-size: larger;
+    font-size: 3em;
 }
     
 .image {
@@ -126,8 +126,8 @@ li{
 }
 
 .column-container {
-    columns: 2 200px; 
-    column-gap: 20px; 
+    columns: 2 200px;
+    column-gap: 20px;
 }
 
 #contacts {

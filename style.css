@@ -23,6 +23,7 @@ h1 {
 
 h2 {
     position: sticky;
+    font-size: larger;
 }
     
 .image {
@@ -107,6 +108,7 @@ li{
 
 .about {
     min-height: 100vh;
+    background-color: lightcoral;
 }
 
 .column-container {
@@ -126,7 +128,7 @@ li{
 .contact-form-container {
     background: white;
     padding: 20px;
-    margin:auto;
+    margin: 10px auto;
     border-radius: 8px;
     box-shadow: 0 4px 8px rgba(0,0,0,0.1);
     width: 300px;

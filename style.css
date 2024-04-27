@@ -111,30 +111,24 @@ li{
 
 .contacts {
     min-height: 100vh;
-    margin: 0;
+    margin: auto;
     background-color: blueviolet;
     text-align: center;
 }
 
-body {
-    font-family: Arial, sans-serif;
-    background: #f4f4f4;
-    display: flex;
-    justify-content: center;
-    align-items: center;
-    height: 100vh;
-    margin: 0;
-}
+
 
 .contact-form-container {
     background: white;
     padding: 20px;
+    margin:auto;
     border-radius: 8px;
     box-shadow: 0 4px 8px rgba(0,0,0,0.1);
     width: 300px;
+    text-align: center;
 }
 
-/* Styling form elements */
+
 form h1 {
     text-align: center;
     color: #333;
@@ -153,12 +147,12 @@ textarea {
     margin-top: 5px;
     border: 1px solid #ccc;
     border-radius: 4px;
-    box-sizing: border-box; /* Include padding and border in the element's width */
+    box-sizing: border-box; 
 }
 
 textarea {
     height: 100px;
-    resize: none; /* Disable resizing of textarea */
+    resize: none; 
 }
 
 button {
@@ -201,20 +195,20 @@ button {
     display: flexbox;
 }
 
-/* Styling for the row containers */
+
 .row {
-    display: flex; /* Makes the row a flex container */
-    justify-content: space-around; /* Spaces out the boxes within each row */
+    display: flex; 
+    justify-content: space-around; 
     margin-bottom: 20px; 
 
 
 .box {
     float: left black; 
-    width: 30%; /* Sets the width of each box to 30% of the row width */
-    padding: 10px; /* Adds padding inside the boxes */
-    background-color: #f4f4f4; /* Sets a background color for visibility */
-    text-align: center; /* Centers text inside the box */
-    border: 1px solid #ccc; /* Adds a border around each box */
+    width: 30%;
+    padding: 10px; 
+    background-color: #f4f4f4; 
+    text-align: center; 
+    border: 1px solid #ccc; 
 }
 
 
@@ -222,6 +216,39 @@ button {
     content: "";
     display: table;
     clear: both;
+}
+
+footer {
+    background-color: #333;
+    color: #fff;
+    text-align: center;
+    padding: 20px 0;
+}
+
+.social-links {
+    font-size: 16px; /* Adjust size as needed */
+    margin: 0 auto;
+}
+
+.social-links a {
+    color: white;
+    text-decoration: none;
+    margin: 0 10px;
+    transition: color 0.3s;
+}
+
+.social-links i {
+    margin-right: 5px;
+}
+
+.social-links a:hover {
+    color: #c7d2fe; /* Light blue for hover effect, can be changed */
+}
+
+@media (max-width: 768px) {
+    .social-links {
+        font-size: 14px;
+    }
 }
 
 
